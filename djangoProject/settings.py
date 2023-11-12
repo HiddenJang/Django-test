@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'djangoProject',
 ]
 
 MIDDLEWARE = [
@@ -122,3 +123,32 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# LOGGING = {
+#     'version': 1,
+#     'disable_existing_loggers': False,
+#     'handlers': {
+#         'debug_file': {
+#             'level': 'DEBUG',
+#             'class': 'logging.FileHandler',
+#             'filename': '<path_to_file>/debug.log'
+#         },
+#         'error_file': {
+#             'level': 'ERROR',
+#             'class': 'logging.FileHandler',
+#             'filename': '<path_to_file>/error.log'
+#         }
+#     },
+#     'loggers': {
+#             'django': {
+#                 'handlers': ['debug_file'],
+#                 'level': 'DEBUG',
+#                 'propagate': True,
+#             },
+#             '': {
+#                 'handlers': ['error_file'],
+#                 'level': 'ERROR',
+#                 'propagate': True,
+#             },
+#         },
+# }
